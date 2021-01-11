@@ -15,6 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                echo "I'm having the time of my life!"
             }
         }
     }
