@@ -19,7 +19,7 @@ pipeline {
                 bat "dir"
                 bat "npm -v"
                 bat "npm install testcafe"
-                bat "testcafe chrome test.js"
+                bat "npm run testcafe"
             }
         }
         stage('Deploy') {
