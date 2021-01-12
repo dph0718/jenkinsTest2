@@ -15,8 +15,7 @@ pipeline {
         stage('Execute TestCafe'){
             steps {
                 // input("Do you want to proceed? Huh?")
-                sh "npm install testcafe"
-                sh "testcafe chrome test.js"
+                sh "npm -v"
             }
         }
         stage('Deploy') {
