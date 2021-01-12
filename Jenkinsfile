@@ -18,8 +18,8 @@ pipeline {
                 bat "cd"
                 bat "dir"
                 bat "npm -v"
-                bat "npm install testcafe"
-                bat "npm run testcafe"
+                bat "npm install testcafe testcafe-reporter-xunit"
+                bat "node_modules/.bin/testcafe chrome test.test.js -r xunit:res.xml"
             }
         }
         stage('Deploy') {
