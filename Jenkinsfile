@@ -17,7 +17,7 @@ pipeline {
                 // input("Do you want to proceed? Huh?")
                 bat "cd"
                 bat "dir"
-                bat "echo npm -v"
+                bat "npm -v"
                 bat "npm install testcafe"
                 bat "testcafe chrome test.js"
             }
