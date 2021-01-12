@@ -12,9 +12,10 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Using Input'){
+        stage('Execute TestCafe'){
             steps {
-                input("Do you want to proceed? Huh?")
+                // input("Do you want to proceed? Huh?")
+                sh "testcafe chrome test.js"
             }
         }
         stage('Deploy') {
